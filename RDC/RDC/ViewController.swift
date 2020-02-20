@@ -25,7 +25,7 @@ class ViewController: UIViewController, UITabBarControllerDelegate {
         let VC3 = UIViewController()
         let VC4 = UIViewController()
 
-        VC1.tabBarItem = UITabBarItem(title: "Accueil", image: UIImage(named : "maison"), selectedImage: UIImage(named : "maison"))
+        VC1.tabBarItem = UITabBarItem(title: "Accueil", image: UIImage(named : "accueil"), selectedImage: UIImage(named : "accueil"))
         
         VC2.tabBarItem = UITabBarItem(title: "Podcasts", image: UIImage(named : "podcast"), selectedImage: UIImage(named : "podcast"))
         
