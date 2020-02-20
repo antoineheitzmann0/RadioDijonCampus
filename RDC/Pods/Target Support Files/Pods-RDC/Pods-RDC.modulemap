@@ -1,0 +1,6 @@
+framework module Pods_RDC {
+  umbrella header "Pods-RDC-umbrella.h"
+
+  export *
+  module * { export * }
+}
