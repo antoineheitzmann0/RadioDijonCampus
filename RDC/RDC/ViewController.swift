@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITabBarControllerDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         createTabBar()
-        
+        let _ = DataManager()
     }
     
     func createTabBar(){

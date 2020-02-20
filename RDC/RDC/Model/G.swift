@@ -1,14 +1,14 @@
 //
 //  G.swift
-//  RadioDijonCampus
+//  RDC
 //
-//  Created by Loic Brunot on 14/11/2019.
-//  Copyright Â© 2019 Indelebil. All rights reserved.
+//  Created by Antoine Heitzmann on 20/02/2020.
+//  Copyright © 2020 RadioDijonCampus. All rights reserved.
 //
 
 import UIKit
 
-class G: NSObject {
+public class G: NSObject {
     public static var wSC:CGFloat = 0.0
     public static var hSC:CGFloat = 0.0
     

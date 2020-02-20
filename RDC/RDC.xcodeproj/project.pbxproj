@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0DC9DEC3ED12F5B37EF13AAF /* Pods_RDC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25022A622CB41E3FBA8F3D7 /* Pods_RDC.framework */; };
-		BD3505C523FEB76100DE7D18 /* Controller in Resources */ = {isa = PBXBuildFile; fileRef = BD3505C423FEB76000DE7D18 /* Controller */; };
-		BD3505C723FEB76700DE7D18 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = BD3505C623FEB76700DE7D18 /* Model */; };
+		BD3505D723FEC15B00DE7D18 /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3505D323FEC15B00DE7D18 /* Archive.swift */; };
+		BD3505E723FEC27B00DE7D18 /* G.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3505E623FEC27B00DE7D18 /* G.swift */; };
+		BD3505E923FEC39600DE7D18 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3505E823FEC39600DE7D18 /* DataManager.swift */; };
+		BD57865E23FEC63E0020B9B6 /* Redac.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD57865D23FEC63E0020B9B6 /* Redac.swift */; };
+		BD57866023FEC64D0020B9B6 /* Chronique.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD57865F23FEC64D0020B9B6 /* Chronique.swift */; };
+		BD57866223FEC6F80020B9B6 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD57866123FEC6F80020B9B6 /* Show.swift */; };
 		D837572C23E45983002EDB6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D837572B23E45983002EDB6C /* AppDelegate.swift */; };
 		D837572E23E45983002EDB6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D837572D23E45983002EDB6C /* SceneDelegate.swift */; };
 		D837573023E45983002EDB6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D837572F23E45983002EDB6C /* ViewController.swift */; };
@@ -21,8 +25,12 @@
 /* Begin PBXFileReference section */
 		14038B0DC032F1B4187CF839 /* Pods-RDC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDC.release.xcconfig"; path = "Target Support Files/Pods-RDC/Pods-RDC.release.xcconfig"; sourceTree = "<group>"; };
 		9F06D8F310B728DD58F1B7AB /* Pods-RDC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDC.debug.xcconfig"; path = "Target Support Files/Pods-RDC/Pods-RDC.debug.xcconfig"; sourceTree = "<group>"; };
-		BD3505C423FEB76000DE7D18 /* Controller */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Controller; path = ../../RadioCampus/Controller; sourceTree = "<group>"; };
-		BD3505C623FEB76700DE7D18 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Model; path = ../../RadioCampus/Model; sourceTree = "<group>"; };
+		BD3505D323FEC15B00DE7D18 /* Archive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Archive.swift; sourceTree = "<group>"; };
+		BD3505E623FEC27B00DE7D18 /* G.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = G.swift; path = RDC/Model/G.swift; sourceTree = SOURCE_ROOT; };
+		BD3505E823FEC39600DE7D18 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		BD57865D23FEC63E0020B9B6 /* Redac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redac.swift; sourceTree = "<group>"; };
+		BD57865F23FEC64D0020B9B6 /* Chronique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chronique.swift; sourceTree = "<group>"; };
+		BD57866123FEC6F80020B9B6 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		D837572823E45983002EDB6C /* RDC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D837572B23E45983002EDB6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D837572D23E45983002EDB6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +71,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BD3505C923FEC10500DE7D18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD3505D323FEC15B00DE7D18 /* Archive.swift */,
+				BD57865D23FEC63E0020B9B6 /* Redac.swift */,
+				BD57865F23FEC64D0020B9B6 /* Chronique.swift */,
+				BD57866123FEC6F80020B9B6 /* Show.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD3505E023FEC19700DE7D18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BD3505E623FEC27B00DE7D18 /* G.swift */,
+				BD3505E823FEC39600DE7D18 /* DataManager.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		D837571F23E45983002EDB6C = {
 			isa = PBXGroup;
 			children = (
@@ -84,8 +112,8 @@
 		D837572A23E45983002EDB6C /* RDC */ = {
 			isa = PBXGroup;
 			children = (
-				BD3505C623FEB76700DE7D18 /* Model */,
-				BD3505C423FEB76000DE7D18 /* Controller */,
+				BD3505E023FEC19700DE7D18 /* Controller */,
+				BD3505C923FEC10500DE7D18 /* Model */,
 				D837572B23E45983002EDB6C /* AppDelegate.swift */,
 				D837572D23E45983002EDB6C /* SceneDelegate.swift */,
 				D837572F23E45983002EDB6C /* ViewController.swift */,
@@ -157,10 +185,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD3505C723FEB76700DE7D18 /* Model in Resources */,
 				D837573823E45987002EDB6C /* LaunchScreen.storyboard in Resources */,
 				D837573523E45987002EDB6C /* Assets.xcassets in Resources */,
-				BD3505C523FEB76100DE7D18 /* Controller in Resources */,
 				D837573323E45983002EDB6C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,8 +240,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD3505D723FEC15B00DE7D18 /* Archive.swift in Sources */,
 				D837573023E45983002EDB6C /* ViewController.swift in Sources */,
+				BD57866023FEC64D0020B9B6 /* Chronique.swift in Sources */,
+				BD3505E723FEC27B00DE7D18 /* G.swift in Sources */,
+				BD57865E23FEC63E0020B9B6 /* Redac.swift in Sources */,
 				D837572C23E45983002EDB6C /* AppDelegate.swift in Sources */,
+				BD57866223FEC6F80020B9B6 /* Show.swift in Sources */,
+				BD3505E923FEC39600DE7D18 /* DataManager.swift in Sources */,
 				D837572E23E45983002EDB6C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
