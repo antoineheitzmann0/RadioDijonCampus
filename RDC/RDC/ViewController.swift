@@ -28,7 +28,7 @@ class ViewController: UIViewController, UITabBarControllerDelegate {
 
         VC1.title = "Accueil"
         VC1.view.backgroundColor = .red
-        VC1.tabBarItem = UITabBarItem(title: "Accueil", image: UIImage(named : "maison"), selectedImage: UIImage(named : "maison"))
+        VC1.tabBarItem = UITabBarItem(title: "Accueil", image: UIImage(named : "accueil"), selectedImage: UIImage(named : "accueil"))
         
         VC2.title = "Podcasts"
         VC2.view.backgroundColor = .blue
