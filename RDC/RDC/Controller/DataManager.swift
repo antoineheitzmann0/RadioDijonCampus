@@ -11,11 +11,6 @@ public class DataManager {
     }
     
     func getArchives(){
-        AF.request(G.path_Archives).responseJSON{
-            response in
-            let json = JSON(response.value!)
-            print(json)
-        }
     }
     
     func getChronique(){
@@ -25,5 +20,23 @@ public class DataManager {
     }
     
     func getShows(){
+        AF.request(G.path_REST + "pages?parents=393").responseJSON{
+            response in
+            let json = JSON(response.value!)
+            for (key, subJson) in json {
+                var show = Show()
+                //print(subJson)
+                if let name = subJson["slug"].string {
+                    print(name)
+                    show.name = name
+                }
+                if let id = subJson["id"].int{
+                    print(id)
+                    show.id = id
+                }
+                G.tShows.append(show)
+            }
+            print(G.tShows)
+        }
     }
 }

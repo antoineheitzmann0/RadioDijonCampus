@@ -9,5 +9,11 @@
 import UIKit
 
 public class Show: NSObject {
-
+    public var id:Int
+    public var name:String
+    
+    override init(){
+        self.id = 0;
+        self.name = ""
+    }
 }
