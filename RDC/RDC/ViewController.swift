@@ -45,7 +45,7 @@ class ViewController: UIViewController, UITabBarControllerDelegate {
     }
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        print("Titre", tabBarController.title, tabBarController.selectedIndex)
+        //print("Titre", tabBarController.title, tabBarController.selectedIndex)
     }
     
 
