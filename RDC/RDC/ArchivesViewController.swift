@@ -10,6 +10,8 @@ import UIKit
 
 class ArchivesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    let screenSize: CGRect = UIScreen.main.bounds
+    
     let tArchives = [
         Archive(name: "test 1", style: "Rap US", image: UIImage()),
         Archive(name: "test 2", style: "Rap FR", image: UIImage()),
@@ -27,8 +29,8 @@ class ArchivesViewController: UIViewController, UITableViewDelegate, UITableView
         }
         
         func createNavBar(){
-            let screenSize: CGRect = UIScreen.main.bounds
-            let navBar = UINavigationBar(frame: CGRect(x: 0, y: 50, width: screenSize.width, height: 44))
+        
+             let navBar = UINavigationBar(frame: CGRect(x: 0, y: 30, width: screenSize.width, height: screenSize.height))
             let navItem = UINavigationItem(title: "Archives")
             let doneItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: nil, action: #selector(done))
             navItem.rightBarButtonItem = doneItem
@@ -39,7 +41,7 @@ class ArchivesViewController: UIViewController, UITableViewDelegate, UITableView
         func createArchivesListView(){
             let archivesList = UITableView();
             
-            archivesList.frame = self.view.frame; // A modif pour qu'il ne prenne pas tout l'espace
+            archivesList.frame = CGRect(x: 0, y: 80, width: screenSize.width, height: screenSize.height-80);
             archivesList.dataSource = self
             archivesList.delegate = self
             //Indique le template pour la cellule

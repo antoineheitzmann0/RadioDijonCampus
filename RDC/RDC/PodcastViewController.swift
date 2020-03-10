@@ -19,6 +19,7 @@ class PodcastViewController: UIViewController, UITableViewDelegate, UITableViewD
         
     }
     
+    let screenSize: CGRect = UIScreen.main.bounds
 
     func createView(){
         createPodcastsListView()
@@ -27,8 +28,7 @@ class PodcastViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func createNavBar(){
-        let screenSize: CGRect = UIScreen.main.bounds
-        let navBar = UINavigationBar(frame: CGRect(x: 0, y: 50, width: screenSize.width, height: 44))
+        let navBar = UINavigationBar(frame: CGRect(x: 0, y: 30, width: screenSize.width, height: screenSize.height))
         let navItem = UINavigationItem(title: "Podcast")
         let doneItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: nil, action: #selector(done))
         navItem.rightBarButtonItem = doneItem
@@ -39,7 +39,7 @@ class PodcastViewController: UIViewController, UITableViewDelegate, UITableViewD
     func createPodcastsListView(){
         let podcastsList = UITableView();
         
-        podcastsList.frame = self.view.frame; // A modif pour qu'il ne prenne pas tout l'espace
+        podcastsList.frame = CGRect(x: 0, y: 80, width: screenSize.width, height: screenSize.height-80);
         podcastsList.dataSource = self;
         podcastsList.delegate = self;
         //Indique le template pour la cellule
@@ -119,9 +119,9 @@ class PodcastCell: UITableViewCell {
         contentView.addSubview(podcastName)
         contentView.addSubview(podcastStyle)
         
-        podcastImage.frame = CGRect(x: 0, y: 0, width: 140, height: 100)
-        podcastName.frame = CGRect(x: 150, y: 10, width: 140, height: 80)
-        podcastStyle.frame = CGRect(x: 250, y: 10, width: 140, height: 80)
+        podcastImage.frame = CGRect(x: 20, y: 0, width: 100, height: 100)
+        podcastName.frame = CGRect(x: 150, y: 0, width: 150, height: 80)
+        podcastStyle.frame = CGRect(x: 150, y: 30, width: 100, height: 80)
 
     }
     
