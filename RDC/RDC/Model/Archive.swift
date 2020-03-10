@@ -10,5 +10,15 @@ import UIKit
 
 public class Archive: NSObject {
     
+        public var name: String;
+        public var style: String;
+        public var image: UIImage;
+       
+       public init(name: String, style: String, image: UIImage) {
+           self.name = name;
+           self.image = image;
+           self.style = style;
+       }
+    
 
 }

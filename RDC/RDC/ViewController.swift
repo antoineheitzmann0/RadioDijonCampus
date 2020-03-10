@@ -22,15 +22,13 @@ class ViewController: UIViewController, UITabBarControllerDelegate {
     func createTabBar(){
         let VC1 = AccueilViewController()
         let VC2 = PodcastViewController()
-        let VC3 = UIViewController()
+        let VC3 = ArchivesViewController()
         let VC4 = UIViewController()
 
         VC1.tabBarItem = UITabBarItem(title: "Accueil", image: UIImage(named : "accueil"), selectedImage: UIImage(named : "accueil"))
         
         VC2.tabBarItem = UITabBarItem(title: "Podcasts", image: UIImage(named : "podcast"), selectedImage: UIImage(named : "podcast"))
         
-        VC3.title = "Archives"
-        VC3.view.backgroundColor = .yellow
         VC3.tabBarItem = UITabBarItem(title: "Archives", image: UIImage(named : "archive"), selectedImage: UIImage(named : "archive"))
         
         VC4.title = "Playlist"

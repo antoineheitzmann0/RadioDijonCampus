@@ -3,3 +3,5 @@ RDC/RDC.xcodeproj/xcuserdata/av414423.xcuserdatad/xcschemes/xcschememanagement.p
 RDC/Pods/Pods.xcodeproj/xcuserdata/av414423.xcuserdatad/xcschemes/xcschememanagement.plist
 RDC/.DS_Store
 RDC/.DS_Store
+*.pbxproj
+.DS_Store
