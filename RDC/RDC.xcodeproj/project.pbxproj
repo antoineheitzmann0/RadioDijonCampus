@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0DC9DEC3ED12F5B37EF13AAF /* Pods_RDC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25022A622CB41E3FBA8F3D7 /* Pods_RDC.framework */; };
+		65CE9C412417996000F856FF /* ArchivesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CE9C402417996000F856FF /* ArchivesViewController.swift */; };
 		65D626F923FECD4900B73824 /* AccueilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D626F823FECD4900B73824 /* AccueilViewController.swift */; };
 		65D626FB23FECE9200B73824 /* PodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D626FA23FECE9200B73824 /* PodcastViewController.swift */; };
 		BD3505D723FEC15B00DE7D18 /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3505D323FEC15B00DE7D18 /* Archive.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		14038B0DC032F1B4187CF839 /* Pods-RDC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDC.release.xcconfig"; path = "Target Support Files/Pods-RDC/Pods-RDC.release.xcconfig"; sourceTree = "<group>"; };
+		65CE9C402417996000F856FF /* ArchivesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivesViewController.swift; sourceTree = "<group>"; };
 		65D626F823FECD4900B73824 /* AccueilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccueilViewController.swift; sourceTree = "<group>"; };
 		65D626FA23FECE9200B73824 /* PodcastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastViewController.swift; sourceTree = "<group>"; };
 		9F06D8F310B728DD58F1B7AB /* Pods-RDC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDC.debug.xcconfig"; path = "Target Support Files/Pods-RDC/Pods-RDC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				D837573923E45987002EDB6C /* Info.plist */,
 				65D626F823FECD4900B73824 /* AccueilViewController.swift */,
 				65D626FA23FECE9200B73824 /* PodcastViewController.swift */,
+				65CE9C402417996000F856FF /* ArchivesViewController.swift */,
 			);
 			path = RDC;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				BD3505D723FEC15B00DE7D18 /* Archive.swift in Sources */,
 				D837573023E45983002EDB6C /* ViewController.swift in Sources */,
 				BD3505E723FEC27B00DE7D18 /* G.swift in Sources */,
+				65CE9C412417996000F856FF /* ArchivesViewController.swift in Sources */,
 				BD57865E23FEC63E0020B9B6 /* Redac.swift in Sources */,
 				65D626F923FECD4900B73824 /* AccueilViewController.swift in Sources */,
 				D837572C23E45983002EDB6C /* AppDelegate.swift in Sources */,
