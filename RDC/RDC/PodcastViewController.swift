@@ -28,7 +28,7 @@ class PodcastViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func createNavBar(){
-        let navBar = UINavigationBar(frame: CGRect(x: 0, y: 30, width: screenSize.width, height: screenSize.height))
+        let navBar = UINavigationBar(frame: CGRect(x: 0, y: 30, width: screenSize.width, height: 0))
         let navItem = UINavigationItem(title: "Podcast")
         let doneItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: nil, action: #selector(done))
         navItem.rightBarButtonItem = doneItem
