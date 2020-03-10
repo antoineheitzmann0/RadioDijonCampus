@@ -16,4 +16,7 @@ public class Show: NSObject {
         self.id = 0;
         self.name = ""
     }
+    func toString() -> String {
+        return "" + String(self.id) + ", " + String(self.name)
+    }
 }

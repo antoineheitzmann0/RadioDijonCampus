@@ -14,6 +14,7 @@ public class DataManager {
     }
     
     func getChronique(){
+        
     }
     
     func getRedac(){
@@ -22,21 +23,25 @@ public class DataManager {
     func getShows(){
         AF.request(G.path_REST + "pages?parents=393").responseJSON{
             response in
-            let json = JSON(response.value!)
+            let json = JSON(response.value)
             for (key, subJson) in json {
-                var show = Show()
-                //print(subJson)
-                if let name = subJson["slug"].string {
-                    print(name)
-                    show.name = name
-                }
+                
+                let title = subJson["title"]["rendered"].stringValue
+                var showId = 0
+                let desc = subJson["content"]["rendered"].stringValue
+                
+                let content = subJson["content"]["rendered"].stringValue
                 if let id = subJson["id"].int{
-                    print(id)
-                    show.id = id
+                    showId = id
                 }
-                G.tShows.append(show)
+                
+                var podcast = Podcasts(name : title, desc : desc, image : nil)
+                G.tPodcast.append(podcast)
             }
-            print(G.tShows)
         }
     }
 }
+
+//393 emission
+//chronique 313
+//redac 473

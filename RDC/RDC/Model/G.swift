@@ -19,8 +19,8 @@ public class G: NSObject {
     public static var path_Podcast:String = "http://frequence.u-bourgogne.fr:8081/testdata.php"
     
     // Tableaux pour stocker les diffÃ©rentes donnÃ©es (Ã©missions, rÃ©dactionelles, chroniques, archives)
-    public static var tShows:[Show] = []
+    public static var tPodcast:[Podcasts] = []
     public static var tRedac:[Redac] = []
-    public static var tChroniques:[Chronique] = []
+    //public static var tChroniques:[Chronique] = []
     public static var tArchives:[Archive] = []
 }

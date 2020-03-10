@@ -8,16 +8,14 @@
 
 import UIKit
 
-public class Chronique: NSObject {
+public class Podcast: NSObject {
     
     public var name: String;
-    public var style: String;
+    public var desc: String;
     public var image: UIImage;
     
-    public init(name: String, style: String, image: UIImage) {
-        self.name = name;
-        self.image = image;
-        self.style = style;
+    func toString() -> String {
+        return "" + String(self.name) + ", " + String(self.desc)
     }
 
 }

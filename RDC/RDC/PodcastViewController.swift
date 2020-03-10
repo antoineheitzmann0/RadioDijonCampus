@@ -9,23 +9,21 @@
 import UIKit
 
 class PodcastViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    let tPodcasts = [
-        Chronique(name: "podcast 1", style: "lourd", image: UIImage()),
-        Chronique(name: "podcast 2", style: "grave bien",image: UIImage()),
-        Chronique(name: "podcast 3", style: "sympa", image: UIImage())
-    ] as [Chronique];
-    
-   
 
+    var tPodcasts:[Podcasts] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         createView()
+
+        tPodcasts = G.tPodcast
+        
     }
     
 
     func createView(){
         createPodcastsListView()
         createNavBar();
+        print(tPodcasts)
     }
     
     func createNavBar(){
@@ -105,11 +103,11 @@ class PodcastCell: UITableViewCell {
         return lbl
     }()
     
-    var podcast:Chronique? {
+    var podcast:Podcasts? {
         didSet {
             podcastImage.image = podcast?.image
             podcastName.text = podcast?.name
-            podcastStyle.text = podcast?.style
+            podcastStyle.text = podcast?.description
         }
     }
     
